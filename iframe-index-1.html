@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    /* alipay iconfont */
+    @font-face {
+        font-family: "rei";
+        src: url("https://i.alipayobjects.com/common/fonts/rei.eot"); /* IE9 */
+        src: url("https://i.alipayobjects.com/common/fonts/rei.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://i.alipayobjects.com/common/fonts/rei.woff") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+        url("https://i.alipayobjects.com/common/fonts/rei.ttf")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+        url("https://i.alipayobjects.com/common/fonts/rei.svg#rei") format("svg"); /* iOS 4.1- */
+    }
+    .iconfont {
+        font-family:"rei";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #4d4d4d;
+        cursor: default;
+        -webkit-font-smoothing: antialiased;
+    }
+    </style>
+    <script src="https://a.alipayobjects.com/seajs/1.2.1/sea.js"></script>
+    <script src="./static/js/arale-helper.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36247332-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+  (function() {
+    var data;
+    seajs._package = data = {"name":"grid","version":"1.0.0","root":"alice","description":"990像素定宽25栅格布局。","homepage":"","author":"","repository":{"type":"git","url":"https://github.com/aliceui/grid"},"bugs":{"url":"https://github.com/aliceui/grid/issues"},"license":"MIT","dependencies":{},"tests":["grid"],"output":{"grid.css":"."}}
+    data.dependencies && (delete data.dependencies['$'])
+    data.devDependencies && (delete data.devDependencies['$'])
+
+    seajs.config({ alias: data.dependencies })
+    seajs.config({ alias: data.devDependencies })
+    seajs.config({ alias: {} })
+
+    // for alice
+    for(var dep in data.dependencies) {
+        seajs.use(dep);
+    }
+  })();
+</script>
+  </head>
+  <body>
+    <link type="text/css" rel="stylesheet" media="screen" href="../src/grid.css">
+<style>
+.wrapper {
+    width: 990px;
+    margin: 30px auto 0;
+}
+.ui-grid-row div {
+    background: #5DBB73;
+    box-shadow: 0 1px 0 #4FAA65 inset, 0 -1px 0 #4FAA65 inset, 1px 0 0 #4FAA65 inset, -1px 0 0 #4FAA65 inset;
+    transition-duration: 0.3s;
+    text-align: center;
+    padding: 3px 0;
+}
+.ui-grid-row div:hover {
+    background: #72DD8D;
+}
+</style>
+
+<div class="wrapper">
+
+<div class="ui-grid-row">
+    <div class="ui-grid-25">ui-grid-25</div>
+</div>
+
+<div class="ui-grid-row">
+    <div class="ui-grid-5">ui-grid-5</div>
+    <div class="ui-grid-20">ui-grid-20</div>
+</div>
+
+<div class="ui-grid-row">
+    <div class="ui-grid-5">ui-grid-5</div>
+    <div class="ui-grid-15">ui-grid-15</div>
+    <div class="ui-grid-5">ui-grid-5</div>
+</div>
+
+<div class="ui-grid-row">
+    <div class="ui-grid-21">ui-grid-21</div>
+    <div class="ui-grid-4">ui-grid-4</div>
+</div>
+
+<div class="ui-grid-row">
+    <div class="ui-grid-6">ui-grid-6</div>
+    <div class="ui-grid-13">ui-grid-13</div>
+    <div class="ui-grid-6">ui-grid-6</div>    
+</div>
+
+</div>
+
+  </body>
+</html>

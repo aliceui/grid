@@ -1,0 +1,22 @@
+{
+    "name": "grid",
+    "version": "1.0.0",
+    "root": "alice",
+    "description": "990像素定宽25栅格布局。",
+    "homepage": "",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aliceui/grid"
+    },
+    "bugs": {
+        "url": "https://github.com/aliceui/grid/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+    },
+    "tests": ["grid"],
+    "output": {
+        "grid.css": "."
+    }
+}
