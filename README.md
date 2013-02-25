@@ -27,7 +27,7 @@
 ## 演示
 
 ````iframe:280
-<link type="text/css" rel="stylesheet" media="screen" href="../src/grid.css">
+<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
 <style>
 .wrapper {
     width: 990px;
