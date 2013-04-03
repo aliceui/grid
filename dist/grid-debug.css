@@ -1,8 +1,5 @@
-
-/** alice/grid/1.0.0/grid.css **/
+/*! define alice/grid/1.0.0/grid-debug.css */
 /* alice.grid 样式模块 */
-
-@charset "utf-8";
 
 .ui-grid-1, .ui-grid-2, .ui-grid-3, .ui-grid-4, .ui-grid-5, .ui-grid-6, .ui-grid-7, .ui-grid-8, .ui-grid-9, .ui-grid-10, .ui-grid-11,.ui-grid-12, .ui-grid-13, .ui-grid-14, .ui-grid-15, .ui-grid-16, .ui-grid-17, .ui-grid-18, .ui-grid-19, .ui-grid-20, .ui-grid-21, .ui-grid-22, .ui-grid-23, .ui-grid-24, .ui-grid-25 {
     margin: 0 10px 10px 0;
