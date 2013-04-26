@@ -26,6 +26,8 @@
 
 ## 演示
 
+### 基本示例
+
 ````iframe:280
 <link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
 <style>
@@ -75,3 +77,132 @@
 
 </div>
 ````
+
+### 二列布局
+
+````iframe:150
+<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
+<style>
+.content {
+    margin: 0 auto;
+    width: 990px;
+}
+.ui-grid-5,
+.ui-grid-20 {
+    height: 400px;
+    background: #eee;
+    line-height: 400px;
+    text-align: center;
+}
+</style>
+
+<div class="content">
+    <div class="ui-grid-row">
+        <div class="ui-grid-5">190px</div>
+        <div class="ui-grid-20">790px</div>
+    </div>
+</div>
+````
+
+### 三列布局
+
+````iframe:150
+<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
+<style>
+.content {
+    margin: 0 auto;
+    width: 990px;
+}
+.ui-grid-5,
+.ui-grid-15 {
+    height: 400px;
+    background: #eee;
+    line-height: 400px;
+    text-align: center;
+}
+</style>
+
+<div class="content">
+    <div class="ui-grid-row">
+        <div class="ui-grid-5">190px</div>
+        <div class="ui-grid-15">590px</div>
+        <div class="ui-grid-5">190px</div>
+    </div>
+</div>
+````
+
+### 上下布局
+
+````iframe:150
+<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
+<style>
+.content {
+    margin: 0 auto;
+    width: 990px;
+}
+.ui-grid-5,
+.ui-grid-15 {
+    height: 400px;
+    background: #eee;
+    line-height: 400px;
+    text-align: center;
+}
+.ui-grid-25 {
+    height: 120px;
+    background: #eee;
+    line-height: 120px;
+    text-align: center;
+}
+</style>
+
+<div class="content">
+    <div class="ui-grid-row">
+        <div class="ui-grid-25">990px</div>
+    </div>
+    <div class="ui-grid-row">
+        <div class="ui-grid-5">190px</div>
+        <div class="ui-grid-15">590px</div>
+        <div class="ui-grid-5">190px</div>
+    </div>
+</div>
+````
+
+### 上中下布局 
+
+````iframe:150
+<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
+<style>
+.content {
+    margin: 0 auto;
+    width: 990px;
+}
+.ui-grid-5,
+.ui-grid-15 {
+    height: 400px;
+    background: #eee;
+    line-height: 400px;
+    text-align: center;
+}
+.ui-grid-25 {
+    height: 120px;
+    background: #eee;
+    line-height: 120px;
+    text-align: center;
+}
+</style>
+
+<div class="content">
+    <div class="ui-grid-row">
+        <div class="ui-grid-25">990px</div>
+    </div>
+    <div class="ui-grid-row">
+        <div class="ui-grid-5">190px</div>
+        <div class="ui-grid-15">590px</div>
+        <div class="ui-grid-5">190px</div>
+    </div>
+    <div class="ui-grid-row">
+        <div class="ui-grid-25">990px</div>
+    </div>
+</div>
+````
+
