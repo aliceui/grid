@@ -1,26 +1,33 @@
 # grid
 
 ---
-
-990像素定宽25栅格布局。
-
+支付宝之Alice_990像素定宽25栅格布局_自用修改版。
 ---
 
 ## 使用说明
 
-### .ui-grid-row
+### .ui_container_25
+表示990px宽度水平居中，用于外层包裹。
 
-表示一行，用于包裹`.ui-grid-{{number}}`。一行内的栅格数不要超过 25。
+### .ui_grid_row
+表示一行，用于包裹`.ui_grid_{{number}}`。一行内的栅格数不要超过 25。
 
-### .ui-grid-{{number}}
+### .ui_grid_{{number}}
+表示区域跨越了多少列。数字从 1 到 25，例如`ui_grid_18`。
 
-表示区域跨越了多少列。数字从 1 到 25，例如`ui-grid-18`。
+### .ui_alpha
+修正左边距为0。
+
+### .ui_omega
+修正右边距为0。
 
 ```
-<div class="ui-grid-row">
-    <div class="ui-grid-5">ui-grid-5</div>
-    <div class="ui-grid-15">ui-grid-15</div>
-    <div class="ui-grid-5">ui-grid-5</div>
+<div class="ui_container_25">
+	<div class="ui_grid_row">
+		<div class="ui_grid_5">ui_grid_5</div>
+		<div class="ui_grid_15">ui_grid_15</div>
+		<div class="ui_grid_5">ui_grid_5</div>
+	</div>
 </div>
 ```
 
@@ -31,25 +38,21 @@
 ````iframe:280
 <link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
 <style>
-.wrapper {
-    width: 990px;
-    margin: 30px auto 0;
-}
-.ui-grid-row div {
+.ui_grid_row div {
     background: #5DBB73;
     box-shadow: 0 1px 0 #4FAA65 inset, 0 -1px 0 #4FAA65 inset, 1px 0 0 #4FAA65 inset, -1px 0 0 #4FAA65 inset;
     transition-duration: 0.3s;
     text-align: center;
     padding: 3px 0;
 }
-.ui-grid-row div:hover {
+.ui_grid_row div:hover {
     background: #72DD8D;
 }
 </style>
 
-<div class="wrapper">
+<div class="ui_container_25">
 
-<div class="ui-grid-row">
+<div class="ui_grid_row">
     <div class="ui-grid-25">ui-grid-25</div>
 </div>
 
@@ -77,132 +80,3 @@
 
 </div>
 ````
-
-### 二列布局
-
-````iframe:150
-<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
-<style>
-.content {
-    margin: 0 auto;
-    width: 990px;
-}
-.ui-grid-5,
-.ui-grid-20 {
-    height: 400px;
-    background: #eee;
-    line-height: 400px;
-    text-align: center;
-}
-</style>
-
-<div class="content">
-    <div class="ui-grid-row">
-        <div class="ui-grid-5">190px</div>
-        <div class="ui-grid-20">790px</div>
-    </div>
-</div>
-````
-
-### 三列布局
-
-````iframe:150
-<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
-<style>
-.content {
-    margin: 0 auto;
-    width: 990px;
-}
-.ui-grid-5,
-.ui-grid-15 {
-    height: 400px;
-    background: #eee;
-    line-height: 400px;
-    text-align: center;
-}
-</style>
-
-<div class="content">
-    <div class="ui-grid-row">
-        <div class="ui-grid-5">190px</div>
-        <div class="ui-grid-15">590px</div>
-        <div class="ui-grid-5">190px</div>
-    </div>
-</div>
-````
-
-### 上下布局
-
-````iframe:150
-<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
-<style>
-.content {
-    margin: 0 auto;
-    width: 990px;
-}
-.ui-grid-5,
-.ui-grid-15 {
-    height: 400px;
-    background: #eee;
-    line-height: 400px;
-    text-align: center;
-}
-.ui-grid-25 {
-    height: 120px;
-    background: #eee;
-    line-height: 120px;
-    text-align: center;
-}
-</style>
-
-<div class="content">
-    <div class="ui-grid-row">
-        <div class="ui-grid-25">990px</div>
-    </div>
-    <div class="ui-grid-row">
-        <div class="ui-grid-5">190px</div>
-        <div class="ui-grid-15">590px</div>
-        <div class="ui-grid-5">190px</div>
-    </div>
-</div>
-````
-
-### 上中下布局 
-
-````iframe:150
-<link type="text/css" rel="stylesheet" media="screen" href="src/grid.css">
-<style>
-.content {
-    margin: 0 auto;
-    width: 990px;
-}
-.ui-grid-5,
-.ui-grid-15 {
-    height: 400px;
-    background: #eee;
-    line-height: 400px;
-    text-align: center;
-}
-.ui-grid-25 {
-    height: 120px;
-    background: #eee;
-    line-height: 120px;
-    text-align: center;
-}
-</style>
-
-<div class="content">
-    <div class="ui-grid-row">
-        <div class="ui-grid-25">990px</div>
-    </div>
-    <div class="ui-grid-row">
-        <div class="ui-grid-5">190px</div>
-        <div class="ui-grid-15">590px</div>
-        <div class="ui-grid-5">190px</div>
-    </div>
-    <div class="ui-grid-row">
-        <div class="ui-grid-25">990px</div>
-    </div>
-</div>
-````
-
