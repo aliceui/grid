@@ -3,45 +3,14 @@
  * 990像素定宽25栅格布局
  * @author Alice
  * @copyright WangYu
- * @version V0.1 2014-04-17-10:02 WangYu 修改-为_，方便编辑器中双击全选整个单词。增加.ui_container_25类990px居中。增加左右边距分别0
+ * @version V0.1 2014-04-17-10:02 WangYu 修改-为_，方便编辑器中双击全选整个单词。增加.ui_container_25类990px居中。增加左右边距分别修正为0的类。
  */
-.ui_grid_1, .ui_grid_2, .ui_grid_3, .ui_grid_4, .ui_grid_5, .ui_grid_6, .ui_grid_7, .ui_grid_8, .ui_grid_9, .ui_grid_10, .ui_grid_11,.ui_grid_12, .ui_grid_13, .ui_grid_14, .ui_grid_15, .ui_grid_16, .ui_grid_17, .ui_grid_18, .ui_grid_19, .ui_grid_20, .ui_grid_21, .ui_grid_22, .ui_grid_23, .ui_grid_24, .ui_grid_25 {
-    margin:0 10px 10px 0;
-    float:left;
-    display:inline;
-}
-
-.ui_grid_1 {width:30px;}
-.ui_grid_2 {width:70px;}
-.ui_grid_3 {width:110px;}
-.ui_grid_4 {width:150px;} /* 右侧推广位的宽度 */
-.ui_grid_5 {width:190px;} /* 左侧边栏的宽度 */
-.ui_grid_6 {width:230px;}
-.ui_grid_7 {width:270px;}
-.ui_grid_8 {width:310px;}
-.ui_grid_9 {width:350px;}
-.ui_grid_10 {width:390px;}
-.ui_grid_11 {width:430px;}
-.ui_grid_12 {width:470px;}
-.ui_grid_13 {width:510px;}
-.ui_grid_14 {width:550px;}
-.ui_grid_15 {width:590px;} /* 中央区域宽度 */
-.ui_grid_16 {width:630px;}
-.ui_grid_17 {width:670px;}
-.ui_grid_18 {width:710px;}
-.ui_grid_19 {width:750px;}
-.ui_grid_20 {width:790px;}
-.ui_grid_21 {width:830px;} /* 交易明细表区域的宽度 */
-.ui_grid_22 {width:870px;}
-.ui_grid_23 {width:910px;}
-.ui_grid_24 {width:950px;}
-.ui_grid_25 {width:990px;} /* 最大页面宽度 */
-
-.ui_container_25 {
+ .ui_container_25 {
     margin-left: auto;
     margin-right: auto;
     width: 990px;
 }
+
 .ui_grid_row {
     margin-right: -10px;
     zoom: 1;
@@ -54,6 +23,38 @@
     height: 0;
     visibility: hidden;
 }
+
+.ui_grid_1, .ui_grid_2, .ui_grid_3, .ui_grid_4, .ui_grid_5, .ui_grid_6, .ui_grid_7, .ui_grid_8, .ui_grid_9, .ui_grid_10, .ui_grid_11,.ui_grid_12, .ui_grid_13, .ui_grid_14, .ui_grid_15, .ui_grid_16, .ui_grid_17, .ui_grid_18, .ui_grid_19, .ui_grid_20, .ui_grid_21, .ui_grid_22, .ui_grid_23, .ui_grid_24, .ui_grid_25 {
+    margin:0 10px 10px 0;
+    float:left;
+    display:inline;
+}
+.ui_grid_1 {width:30px;}
+.ui_grid_2 {width:70px;}
+.ui_grid_3 {width:110px;}
+.ui_grid_4 {width:150px;}  /* 右侧推广位的宽度 */
+.ui_grid_5 {width:190px;}  /* 左侧边栏的宽度 */
+.ui_grid_6 {width:230px;}
+.ui_grid_7 {width:270px;}
+.ui_grid_8 {width:310px;}
+.ui_grid_9 {width:350px;}
+.ui_grid_10 {width:390px;}
+.ui_grid_11 {width:430px;}
+.ui_grid_12 {width:470px;}
+.ui_grid_13 {width:510px;}
+.ui_grid_14 {width:550px;}
+.ui_grid_15 {width:590px;}  /* 中央区域宽度 */
+.ui_grid_16 {width:630px;}
+.ui_grid_17 {width:670px;}
+.ui_grid_18 {width:710px;}
+.ui_grid_19 {width:750px;}
+.ui_grid_20 {width:790px;}
+.ui_grid_21 {width:830px;}  /* 交易明细表区域的宽度 */
+.ui_grid_22 {width:870px;}
+.ui_grid_23 {width:910px;}
+.ui_grid_24 {width:950px;}
+.ui_grid_25 {width:990px;}  /* 最大页面宽度 */
+
 .ui_alpha {
     margin-left: 0;
 }
